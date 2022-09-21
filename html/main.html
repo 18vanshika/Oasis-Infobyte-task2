@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/stylee.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#box">About Me</a></li>
+                    <li><a href="#head">My Work</a></li>
+                    <li><a href="#head">My Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="image">
+
+        <div class="write">
+            <h4>HI!</h4>
+            <h1>My name is<span>Vanshika</span></h1>
+            <p>Web Developer, Singer, Writer</p>
+
+        </div>
+
+    </section>
+    <section>
+    <div id="box">
+        <div class="box">
+            <div class="box1">
+                <img src="1b.jpeg" id="image">
+            </div>
+            <div class="content">
+                <h1>About Me</h1>
+                <p>An enthusiastic, hardworking, and passionate individual keen to learn and develop new applications
+                    enhancing my
+                    skills dynamically with a vision to benefit the organization to my best efforts.</p>
+
+                <div class="box2">
+
+                    <p class="tab-link activelink" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="items active-tab" id="skills">
+                    <ul>
+                        <li>Web Development</li>
+                        <li>C++</li>
+                        <li>C Language</li>
+
+                        <li>Python</li>
+
+                        <li>Machine Learning Using Python(Basics)</li>
+
+                    </ul>
+
+                </div>
+                <div class="items" id="education">
+                    <ul>
+                        <li><span>Bachelors in Technology</span><br>
+                            Jaipur Engineering College and Research Centre
+                            • 2020 – 2024</li>
+                        <li><span>XII (CBSE)-PCM</span><br> St. Teresa Sr. Sec. School
+                            • 2019 – 2020 • 80%</li>
+                        <li><span>X (CBSE)</span><br>
+                            St. Teresa Sr. Sec. School
+                            • 2017 – 2018 • 80%</li>
+
+
+
+                    </ul>
+                </div>
+                <div<div class="items" id="experience">
+                    <ul>
+                        <li><span>Trainee</span><br>
+                            Upflairs
+                            • 01/09/2021 – 10/11/2021</li>
+                        <li><span>Trainee</span><br>Internshala
+                            • 24/06/2022-25/07/2022</li>
+                        <li><span>Intern</span><br>
+                            Oasis Infobyte
+                            • 01/09/2022-01/10/2022</li>
+
+
+
+                    </ul>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    </section>
+    <section class="large">
+        <h1 id="head">MY WORK</h1>
+        <div class="container">
+
+            <div class="contain1">
+                <h1>Web Development</h1>
+                <a href="https://github.com/18vanshika/oasis-infobyte-task-1.git">check Out My Work Here</a>
+                <p>Can make hundred percent proficient website</p>
+            </div>
+            <div class="contain2">
+                <h1>Singing</h1>
+                <a href="https://www.youtube.com/watch?v=4VyzQOHHB2E">song1</a>
+                <a href="https://www.youtube.com/watch?v=94c-F6r5XEw">song2</a>
+                <p>I have participated in various competitions and won prizes . </p>
+            </div>
+            <div class="contain3">
+                <h1>Writing</h1>
+                <p>A profesional Content Writer and I am also a member of college writer's club</p>
+            </div>
+
+        </div>
+    </section>
+    
+        <section class="largee">
+            <h1 id="head">MY Skills</h1>
+            
+            <div class="myskills">
+                <div class="work">
+                    <img src="2a.jpg" class="ima">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>I am a Web Developer and made three Projects</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="2b.jpg" class="ima">
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <p>I have studied Machine Learning and still Learning its advance level.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="2c.png" class="ima">
+                    <div class="layer">
+                        <h3>Object Oriented Programming</h3>
+                        <p>I have studied Object Oriented Programming and looking forward to work on it</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div id="contact">
+                <h1 id="head">Contact Form</h1>
+                <div class="containerr">
+                   
+                        
+                        <div class="center">
+                            <form >
+                                <input type="text" name="Name" placeholder="Enter your Name">
+                                <input type="email" name="Email"placeholder="Enter Your Email">
+                                <textarea name="Message"  rows="6"></textarea>
+                                <button type="submit">Submit</button>
+                                <button id="btn"><a href="Vanshika Jain resume1.docx">Download Resume</a></button>
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+       <section>
+        <div>
+            <footer>
+                <p>jainvanshikaa2002@gmail.com</p>
+            </footer>
+        </div>
+       </section> 
+        
+        
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var items = document.getElementsByClassName("items");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activelink")
+            }
+            for (item of items) {
+                item.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+</body>
+
+</html>

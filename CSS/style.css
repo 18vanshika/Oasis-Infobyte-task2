@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background: black;
+    
+}
+.navbar{
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    
+}
+.navbar ul{
+    display: flex;
+    margin: 15px 15px;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    color: white;
+    margin: 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.navbar ul li a::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.image{
+    background: url("/html/1a.jpg") center/cover;
+    content: "";
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 730px;
+    width: 100%;
+    z-index: -1;
+
+}
+.write{
+    padding: 300px 200px;
+    font-size: 50px;
+    color: white;
+}
+.write h1 span{
+    color: red;
+
+}
+.write p{
+    font-size: 30px;
+}
+p{
+    color: aliceblue;
+}
+.box{
+    display: flex;
+    margin: 80px
+    
+}
+
+.box1{
+   
+    
+    flex-basis: 50px;
+}
+#image{
+    height: 420px;
+    width: 410px;
+    border-radius: 25px;
+}
+.content{
+    margin-left:100px ;
+    
+}
+.content h1{
+    color: white;
+    flex-basis: 50px;
+    font-size:40px;
+    
+    
+}
+.content p{
+    color:  rgb(165, 157, 157);
+    margin-top: 15px;
+    font-size: 25px;
+    width: 600px;
+}
+.box2{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    max-width: fit-content;
+}
+.tab-link::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.activelink::after{
+    width: 50%;
+
+}
+.items{
+    color: rgb(165, 157, 157);;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.items ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.items ul li span{
+    color: rgb(246, 177, 177);
+}
+.items{
+    display: none;
+}
+.items.active-tab{
+    display: block;
+}
+
+.large{
+    background-color: rgb(23, 23, 23);
+    height: 400px;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+}
+#head{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contain1{
+    color: white;
+    background-color: rgb(37, 25, 25);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    
+    border-radius: 25px;
+    
+}
+.contain1 h1{
+    font-size: 30px;
+    color: rgb(255, 242, 0);
+    margin-top: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+    
+
+.contain1 a{
+    text-decoration: none;
+    color: white;
+    margin-top:15px ;
+    font-size: 20px;
+}
+.contain1 p{
+    margin-top: 15px;
+    color: rgb(154, 149, 243);
+    text-align: center;
+    padding: 15px;
+}
+.contain2{
+    color: white;
+    background-color: rgb(37, 25, 25);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    
+    border-radius: 25px;
+    
+}
+.contain2 h1{
+    font-size: 30px;
+    color: rgb(255, 242, 0);
+    margin-top: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+    
+
+.contain2 a{
+    text-decoration: none;
+    color: white;
+    margin-top:15px ;
+    font-size: 20px;
+}
+.contain2 p{
+    margin-top: 15px;
+    color: rgb(154, 149, 243);
+    text-align: center;
+    padding: 15px;
+}
+.contain3{
+    color: white;
+    background-color: rgb(37, 25, 25);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    
+    border-radius: 25px;
+    
+}
+.contain3 h1{
+    font-size: 30px;
+    color: rgb(255, 242, 0);
+    margin-top: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+    
+
+.contain3 a{
+    text-decoration: none;
+    color: white;
+    margin-top:15px ;
+    font-size: 20px;
+}
+.contain3 p{
+    margin-top: 15px;
+    color: rgb(154, 149, 243);
+    text-align: center;
+    padding: 15px;
+}
+.largee{
+    background-color: #2c2b2b;
+    height: 400px;
+}
+.myskills{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.work img{
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work{
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    width: 250px;
+    height: 0px;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0,40px;
+    text-align: center;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.work:hover img{
+    width: 250px;
+    transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+.containerr{
+    height: 490px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.center{
+    flex-basis: 60%;
+   
+}
+
+.center form{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: center;
+}
+form input, form textarea{
+    border: 0;
+    outline: none;
+    background: #474445;
+    padding: 18px;
+    margin: 15px;
+    border-radius: 15px;
+    
+}
+button{
+    width: 200px;
+    padding: 9px;
+    margin-top: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 100px;
+    height: 55px;
+    color: #ff004f;
+    
+    
+}
+button a{
+    text-decoration: none;
+   color: #ff004f;
+
+}
+#btn{
+    height: 60px;
+    width: 150px;
+}
+
+.row h1{
+    color: aliceblue;
+    text-align: center;
+
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color:#2c2b2b;
+    height: 32px;
+    padding: 9px;
+}
+
+
